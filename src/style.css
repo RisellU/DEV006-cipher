@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #5C2A83;
+    margin: 50px;
+}
+.title {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 250%;
+    text-align: center;
+    margin: 50px 20px;
+}
+.bloque {
+    display: flex;
+    justify-content: center;
+}
+.text1 {
+    margin: 70px 60px;
+    color: aliceblue;
+    font-family: "gill sans", sans-serif;
+}
+.text2 {
+    margin: 69px 60px;
+    color: aliceblue;
+    font-family: "gill sans", sans-serif;
+}
+.parrafo {
+    margin-bottom: 5px;
+}
+.mensajeEncriptado {
+
+}
