@@ -13,13 +13,14 @@
       <div class="bloque">
 
         <div class="text1">
-          <textarea class="comentario" rows="15" cols="50">Write here...</textarea>
+          <textarea name="comentario" id="comentario" class="texto" rows="15" cols="50">Type...</textarea>
           <p class="parrafo">Number of spaces for your cipher</p>
-          <input class="espacios" type="text" name="num" id="spaces"/><button type="submit">decipher</button>
+          <input class="resultado" type="number" id="desplazamiento"/><button class="resultado" id="cifrar" name="cifrar" type="buttom">decode</button>
+          <button class="resultado" id="descifrar" name="descifrar" type="buttom">encode</button>
         </div>
 
         <div class="text2">
-          <textarea class="mensajeEncriptado" rows="15" cols="50"></textarea>
+          <textarea id="comentario2" name="comentario2" class="mensajeEncriptado" rows="15" cols="50"></textarea>
           <p class="mensajeEncriptado">Your encrypted message is:</p>
         </div>
 
