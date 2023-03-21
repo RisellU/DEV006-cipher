@@ -1,7 +1,7 @@
-//const cipher = {
 //crear funciones para hacer el cifrado
+const cipher = {
 
- function cifrar(texto,desplazamiento){
+  cifrar: function(texto,desplazamiento){
   let resultado = "";
     let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -20,7 +20,6 @@
  return resultado;  
 }
   //la variable posicion se creo para hacer el calculo del desplazamiento
+}
+export default cipher
 
-//};
-
-//export default cipher

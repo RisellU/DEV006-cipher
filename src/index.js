@@ -1,23 +1,26 @@
-//no es para llamar un elemento del html. Se utiliza para escuchar 
-//cualquier evento que le pase al navegador con "load"
-window.addEventListener("load", inicio, true)
-//admitir en el campo de texto solo letras en mayúscula
-//usamos el evento keyUpp para evitar las letras en minuscula
-function inicio(){
-  document.getElementById("comentario").addEventListener("keyup", function(){
-    this.value = this.value.toUpperCase()
-  }, true); 
+import cipher from './cipher.js';
 
-//this.value llama el evento de "comentario"
-//this.value.toUpperCase sera igual al comentario escrito pero en mayuscula
+window.addEventListener("load", inicio)
+
+function inicio(){
+
+  document.getElementById("comentario").addEventListener("keyup", function() {
+    this.value = this.value.toUpperCase();
+  })
+    
 
   document.getElementById("cifrar").addEventListener("click", function(){
-    let texto = document.getElementById("comentario").value
+    let text = document.getElementById("comentario").value
     let desplazamiento = document.getElementById("desplazamiento").value
-    console.log(texto)
-    //document.getElementById("comentario2").value = cifrar(texto,desplazamiento)
-  }, true);
-//boton cifrar- el cual tomara ese mensaje escrito y para eso se le agrega .value
-//Y la funcion de desplazamiento para que se devuelva el texo a la segunda caja de texto
-//las variables texto y desplazamiento 
+    document.getElementById("comentario2").value = cipher.cifrar(text, desplazamiento)
+    
+  })
+
+  document.getElementById("descifrar").addEventListener("click", function(){
+
+    let text = document.getElementById("comentario").value
+    let desplazamiento = document.getElementById("desplazamiento").value
+    
+  })
+  
 }
