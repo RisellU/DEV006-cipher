@@ -3,7 +3,7 @@ const cipher = {
 
   cifrar: function(texto,desplazamiento){
   let resultado = "";
-    let letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     desplazamiento = (desplazamiento % 26);
     if (texto){
@@ -18,8 +18,16 @@ const cipher = {
     }
  }
  return resultado;  
-}
-  //la variable posicion se creo para hacer el calculo del desplazamiento
+},
+
+descifrar: function(texto, desplazamiento){
+  if (!texto)
+    return "";
+  const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  desplazamiento = (desplazamiento % 26);
+  return texto.replace(/[A-Z]/ig, c=> letras[(letras.indexOf(c)-desplazamiento)%26]);
+} 
+//la variable posicion se creo para hacer el calculo del desplazamiento
 }
 export default cipher
 
