@@ -3,29 +3,42 @@ const cipher = {
 
   cifrar: function(texto,desplazamiento){
   let resultado = "";
-    const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const mayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const minusculas = "abcdefghijklmnopqrstuvwxyz";
+    let valueInt = parseFloat(desplazamiento)
 
-    desplazamiento = (desplazamiento % 26);
+    
+    if (valueInt % 1 === 0 && valueInt > 0){
+      valueInt = (valueInt % 26);
     if (texto){
       for (let i = 0; i<texto.length; i++){
-        if (letras.indexOf(texto[i])!=-1){
-          let posicion = ((letras.indexOf(texto[i])+desplazamiento)%26);
-          resultado += letras[posicion];
+        if (mayusculas.indexOf(texto[i])!=-1){
+          let posicion = ((mayusculas.indexOf(texto[i])+valueInt)%26);
+          resultado += mayusculas[posicion];
         }
-        else {
-          resultado += texto[i];
+        else if (minusculas.indexOf(texto[i])!=-1){
+         let posicion = ((minusculas.indexOf(texto[i])+valueInt)%26);
+        resultado += minusculas[posicion];
+      } else {
+        resultado += texto[i];
       }
     }
  }
+    } else{
+      alert("Ingrese un número entero y mayor que 0")
+      
+    }
+
+    
  return resultado;  
 },
 
 descifrar: function(texto, desplazamiento){
   if (!texto)
     return "";
-  const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  desplazamiento = (desplazamiento % 26);
-  return texto.replace(/[A-Z]/ig, c=> letras[(letras.indexOf(c)-desplazamiento)%26]);
+  const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  desplazamiento = (desplazamiento % 52);
+  return texto.replace(/[aA-zZ]/ig, c=> letras[(letras.indexOf(c)-desplazamiento)%52]);
 } 
 //la variable posicion se creo para hacer el calculo del desplazamiento
 }
