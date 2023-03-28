@@ -1,0 +1,123 @@
+
+html {
+    width: 50%;
+}
+header {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: -130px;
+}
+/*.wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}*/
+.logo {
+    margin-top: 100px;
+    float: left;
+}
+nav {
+    float:right;
+    line-height: 200px;
+    margin-top: 90px;
+    position: relative;
+   
+ }
+ nav a {
+    display: inline-block;
+    color:#ffff;
+    padding: 10px 20px;
+    line-height: normal;
+    position: relative;
+    text-decoration: none;
+   
+ }
+body {
+    background-image: url(https://img.freepik.com/foto-gratis/libro-biblioteca-libro-texto-abierto_1150-5923.jpg?w=900&t=st=1679679049~exp=1679679649~hmac=eba10e8bcd65ea644d8eb1984f51320fd7c266a547376cb08fbc06fb1a66db82);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 50px;
+}
+.title {
+    font-family:"sans-serif";
+    font-style: oblique ;
+    color: #ffff;
+    font-size: 200%;
+    text-align: left;
+    position: relative;
+    top: 50px;
+    left: 132%;
+}
+.bloque {
+    flex-direction: column;
+    position: relative;
+    left: 115%;
+    margin: 50px;
+    top: -380px;
+    /*display: flex;
+    justify-content: right;*/
+}
+.text1 {
+    margin: 5px 60px;
+    color:#ffff;
+    font-family: "sans-serif";
+    font-style:oblique;
+}
+.text2 {
+    margin: 20px 60px;
+    color: aliceblue;
+    font-family: "gill sans", sans-serif;
+}
+.parrafo {
+    margin-bottom: 0px;
+    position: relative;
+    top: -15px;
+}
+.texto {
+    border-radius: 20px;
+}
+.poema {
+    font-size: xx-large;
+    font-family:"sans-serif";
+    font-style:oblique;
+    color: #ffff;
+    margin-bottom: auto;
+    position: relative;
+    top: -15px;
+    right: -10%;
+}
+.poema1 {
+    font-size:medium;
+    font-family:"sans-serif";
+    font-style:oblique, normal;
+    color: #ffff;
+    line-height: 115%;
+    text-align:left;
+    width: 30vw;
+    position: relative;
+    top: -10px;
+    right: -10%;
+}
+footer {
+    font-size: 20px;
+    /*background: black;*/
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    top: -25px;
+}
+.address {
+    margin-bottom: 5px;
+    color: #ffff;
+}
+a:visited {
+    color: #ffff;
+}
+a:hover {
+    color: #733f00;
+}

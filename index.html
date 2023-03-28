@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <main>
+  <body>
+    <header>
+      <div class="logo">
+          <img src="img/logo.png" alt="logo: pergamino y pluma">
+        </div>
+        <nav>
+          <a href="#">Books</a>
+          <a href="#">Poetry</a>
+          <a href="#">History</a>
+          <a href="#">Signature</a>
+        </nav>
+    </header>
+    <div class="contenido">
+      <h1 class="title">Encrypt your favorite poem</h1>
+      <section>
+        <p class="poema">Poem</p>
+        <p class="poema1">Fire does not burn or consume
+
+            Fire neither burns nor consumes,
+          nor do the waves of the sea come and go in haste,
+          nor does the delicious, dry air, the ripe summer air, gently push white flakes of countless seeds
+          That float, moving gracefully, to fall where they may.
+          None of this, none of this surpasses my own blazing fire
+          that burns for the love of the one I love,
+          nor does anything come and go with more haste than I do.
+
+          Does the tide rush in seeking something without ever giving up? So do I.
+          Neither flakes nor perfumes nor high rain-laden clouds furrow the free air
+          as my soul furrows the free air floating
+          in all directions, love, in search of friendship, of you.
+          </p><p class="poema1">-Walt Whitman</p>
+          <p class="poema1">Crisis
+
+            Your voice seems from another time,
+          it no longer has that warm tone
+          of before, nor the complicity
+          of always, they are only words
+          and your affection is now discreet:
+          in your messages there is no more message.
+          </p><p class="poema1">-Francisco Gálvez</p>
+      </section>
+
+      <div class="bloque">
+
+        <div class="text1">
+          <textarea name="comentario" id="comentario" class="texto" rows="15" cols="50"></textarea>
+          <p class="parrafo">Number of spaces for your cipher</p>
+          <input class="resultado" type="number" id="desplazamiento"/><button class="resultado" id="cifrar" name="cifrar" type="buttom">encode</button>
+          <button class="resultado" id="descifrar" name="descifrar" type="buttom">decode</button>
+        </div>
+
+        <div class="text2">
+          <textarea id="comentario2" name="comentario2" class="texto" rows="15" cols="50"></textarea>
+        </div>
+
+      </div>
+      <footer>
+        <p>
+          <a href="#" target="_blank">Contact us</a>
+        </p>
+        <p class="address">123 Poem</p>
+      </footer>
+      <script src="index.js" type="module"></script>
+    </div>
+  </body>
+</main>
+</html>
